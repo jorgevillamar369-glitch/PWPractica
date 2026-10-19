@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pyrovi | Mapa de riesgo de incendios en Ecuador</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="cabecera">
+      <a class="marca" href="#inicio">
+        <img src="logo.svg" alt="Logo de Pyrovi" height="36">
+        Pyrovi
+      </a>
+      <nav>
+        <a href="index.html">Menú de ejercicios</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#precios">Precios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <p class="aviso">
+      Pyrovi es un proyecto académico personal y real usado y representado como una empresa de ejemplo. El teléfono, la dirección,
+      el correo, los precios y los testimonios son ilustrativos para la clase práctica.
+    </p>
+
+    <!-- INICIO -->
+    <section id="inicio" class="portada">
+      <h1>Sabe dónde hay más riesgo de incendio antes de que ocurra</h1>
+      <p>
+        Pyrovi estima cada semana el nivel de riesgo de incendio en zonas de Ecuador
+        usando el clima y los puntos de calor detectados por satélite.
+      </p>
+      <p>
+        <a class="boton" href="#portafolio">Ver zonas piloto</a>
+        <a class="boton" href="#contacto">Contáctanos</a>
+      </p>
+    </section>
+
+    <!-- DESCRIPCIÓN DE LA EMPRESA Y SERVICIOS -->
+    <section id="empresa">
+      <h2>Descripción de la empresa</h2>
+      <p>
+        Pyrovi nace como una iniciativa de ingeniería en sistemas inteligentes: convertir
+        datos abiertos en un mapa fácil de leer. Combinamos los puntos de calor de NASA FIRMS
+        con la temperatura y la lluvia de Open-Meteo, y una red neuronal calcula la
+        probabilidad de incendio por zona y por semana.
+      </p>
+      <div class="fila">
+        <div class="tarjeta">
+          <h3>Mapa de riesgo</h3>
+          <p>Mapa interactivo con un círculo por zona y tarjetas con el porcentaje de riesgo.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Semáforo semanal</h3>
+          <p>Cada zona se clasifica para que se entienda de un vistazo:</p>
+          <span class="pildora alto">Riesgo alto</span>
+          <span class="pildora medio">Riesgo medio</span>
+          <span class="pildora bajo">Riesgo bajo</span>
+        </div>
+        <div class="tarjeta">
+          <h3>API para instituciones</h3>
+          <p>Consulta el riesgo de una zona desde tus propios sistemas, con una petición sencilla a mi modelo real <a href="https://pyrovi79-cmd.github.io/Pyrovi/">Pyrovi</a> ©Jorge Villamar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio">
+      <h2>Portafolio</h2>
+      <p>Nuestro trabajo hasta ahora son dos zonas piloto y el modelo que las evalúa.</p>
+      <div class="fila">
+        <div class="tarjeta">
+          <h3>Distrito Metropolitano de Quito</h3>
+          <p>827 puntos de calor analizados entre 2021 y 2026.</p>
+          <span class="pildora neutra">Zona piloto</span>
+        </div>
+        <div class="tarjeta">
+          <h3>Junín, Manabí</h3>
+          <p>750 puntos de calor analizados entre 2021 y 2026.</p>
+          <span class="pildora neutra">Zona piloto</span>
+        </div>
+        <div class="tarjeta">
+          <h3>Modelo de riesgo</h3>
+          <p>
+            Red neuronal entrenada con 602 registros de zona por semana. Detecta el 71 % de las
+            semanas con incendio (recall 0.71) y acierta el 62 % de sus alertas (precisión 0.62).
+          </p>
+          <span class="pildora neutra">PyTorch</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA DE PRECIOS -->
+    <section id="precios">
+      <h2>Precios</h2>
+      <p>Precios ilustrativos.</p>
+      <div class="fila">
+        <div class="tarjeta">
+          <h3>Demo</h3>
+          <p class="precio">$0</p>
+          <ul>
+            <li>2 zonas piloto</li>
+            <li>Mapa y semáforo semanal</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>Zonas</h3>
+          <p class="precio">$29 <span style="font-size:14px;">al mes</span></p>
+          <ul>
+            <li>Hasta 10 zonas</li>
+            <li>Mapa, semáforo y resumen semanal</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>Institucional</h3>
+          <p class="precio">A convenir</p>
+          <ul>
+            <li>Todas las zonas disponibles</li>
+            <li>Acceso por API</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALES -->
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <p>Testimonios de ejemplo escritos para esta práctica.</p>
+      <div class="fila">
+        <div class="tarjeta">
+          <p>"El semáforo nos ayuda a decidir en qué zona reforzar la vigilancia cada semana."</p>
+          <p><strong>Ana R.</strong> · Técnica de gestión de riesgos (ejemplo)</p>
+        </div>
+        <div class="tarjeta">
+          <p>"Es fácil de leer: no hace falta ser experto para entender el mapa."</p>
+          <p><strong>Luis M.</strong> · Dirigente comunitario (ejemplo)</p>
+        </div>
+        <div class="tarjeta">
+          <p>"Nos gusta que expliquen que es una predicción y no una certeza."</p>
+          <p><strong>Carla P.</strong> · Docente (ejemplo)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias">
+      <h2>Noticias</h2>
+      <div class="tarjeta">
+        <h3>Pyrovi estrena su mapa con dos zonas piloto</h3>
+        <p>Octubre de 2026. El Distrito Metropolitano de Quito y Junín ya muestran su semáforo de riesgo.</p>
+      </div>
+      <div class="tarjeta" style="margin-top:12px;">
+        <h3>Por qué elegimos un umbral de 0.4</h3>
+        <p>
+          Octubre de 2026. Priorizamos detectar incendios reales sin llenar la aplicación de falsas
+          alarmas, y por eso el umbral de alerta alta se fijó en 0.4.
+        </p>
+      </div>
+      <div class="tarjeta" style="margin-top:12px;">
+        <h3>Datos abiertos detrás del mapa</h3>
+        <p>Octubre de 2026. Usamos puntos de calor de NASA FIRMS y clima de Open-Meteo, ambos de acceso libre.</p>
+      </div>
+    </section>
+
+    <!-- PÁGINA DE RECURSOS -->
+    <section id="recursos">
+      <h2>Recursos</h2>
+      <div class="fila">
+        <div class="tarjeta">
+          <h3>Guía: qué hacer con riesgo alto</h3>
+          <ul>
+            <li>No hagas quemas agrícolas en días secos y con viento.</li>
+            <li>Apaga por completo las fogatas con agua y tierra.</li>
+            <li>No tires colillas ni vidrios en zonas de vegetación.</li>
+            <li>Ante un incendio, llama al 911.</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>Fuentes de datos y herramientas</h3>
+          <ul>
+            <li><a href="https://firms.modaps.eosdis.nasa.gov/">NASA FIRMS</a>: puntos de calor por satélite</li>
+            <li><a href="https://open-meteo.com/">Open-Meteo</a>: clima (licencia CC BY 4.0)</li>
+            <li><a href="https://leafletjs.com/">Leaflet</a>: mapas interactivos</li>
+            <li><a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>: mapa base</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <div class="tarjeta">
+        <h3>¿Pyrovi asegura que habrá un incendio?</h3>
+        <p>No. Es una predicción basada en clima e historial de puntos de calor, no una certeza.</p>
+
+        <h3>¿Qué datos usa?</h3>
+        <p>Temperatura máxima y mínima, precipitación semanal y puntos de calor satelitales de 2021 a 2026.</p>
+
+        <h3>¿Qué zonas cubre?</h3>
+        <p>Por ahora el Distrito Metropolitano de Quito y Junín, en Manabí. Se ampliará a más zonas.</p>
+
+        <h3>¿Cómo se lee el semáforo?</h3>
+        <p>Alto si la probabilidad supera el umbral del modelo (0.4), medio desde 0.25 y bajo en el resto.</p>
+
+        <h3>¿Pyrovi pide o guarda mis datos?</h3>
+        <p>No. La página solo muestra información y no guarda datos personales.</p>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN DE CONTACTO Y FORMULARIO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="fila">
+        <div class="tarjeta">
+          <h3>Información de contacto</h3>
+          <ul class="sin-vinetas">
+            <li><strong>Dirección:</strong> Km 5.5, Duran, Ecuador</li>
+            <li><strong>Teléfono:</strong> +593 99 999 9999</li>
+            <li><strong>Correo:</strong> contacto@pyrovi72.example</li>
+            <li><strong>Horario:</strong> lunes a viernes, de 9:00 a 17:00</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>Escríbenos</h3>
+          <form id="formulario" action="#">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej:Norka Mideros" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Ej:Ube@gmail.edu.ec">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button class="boton" type="submit">Enviar</button>
+          </form>
+          <p id="respuesta"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Pyrovi · Km 5.5 , Duran · +593 99 999 9999 · contacto@pyrovi72.gmail.com</p>
+    <p>
+      Descargo de responsabilidad: Pyrovi ofrece predicciones, no certezas. No sustituye
+      a los organismos oficiales de emergencia. Datos de NASA FIRMS y Open-Meteo.
+    </p>
+    <p>Proyecto académico. Clase práctica 1.</p>
+  </footer>
+
+  <script>
+    // Formulario demostrativo: muestra un mensaje en la página y no envía nada
+    document.getElementById("formulario").addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      document.getElementById("respuesta").textContent =
+        "Gracias por escribirnos. Este formulario es demostrativo y no envía datos.";
+    });
+  </script>
+
+</body>
+</html>

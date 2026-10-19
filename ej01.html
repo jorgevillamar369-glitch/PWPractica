@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum | G.04</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="cabecera">
+      <span class="marca">Currículum</span>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ej01.html">Ejercicio 1: Currículum</a>
+        <a href="ej02.html">Ejercicio 2: Sitio web de empresa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div class="layout">
+
+    
+      <aside class="panel">
+        <div class="tarjeta">
+          <div class="avatar">V</div>
+          <h1 style="text-align:center; font-size:22px;">Jorge Villamar</h1>
+          <p style="text-align:center;">Estudiante de Ingeniería en Sistemas Inteligentes</p>
+
+          <h3>Datos personales</h3>
+          <ul class="sin-vinetas">
+            <li><strong>Ubicación:</strong> Ecuador</li>
+            <li><strong>Correo:</strong> jfvillamars@ube.edu.ec</li>
+            <li><strong>Teléfono:</strong> S/N</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta" style="margin-top:16px;">
+          <h3>Habilidades</h3>
+          <span class="pildora neutra">Python</span>
+          <span class="pildora neutra">Pandas</span>
+          <span class="pildora neutra">NumPy</span>
+          <span class="pildora neutra">scikit-learn</span>
+          <span class="pildora neutra">PyTorch</span>
+          <span class="pildora neutra">FastAPI</span>
+          <span class="pildora neutra">Java POO</span>
+          <span class="pildora neutra">MySQL</span>
+          <span class="pildora neutra">MongoDB</span>
+          <span class="pildora neutra">UML</span>
+          <span class="pildora neutra">HTML y CSS</span>
+          <span class="pildora neutra">JavaScript básico</span>
+          <span class="pildora neutra">Leaflet</span>
+        </div>
+      </aside>
+
+     
+      <div class="principal">
+
+        <section>
+          <h2>Perfil</h2>
+          <p>
+            Estudiante de segundo semestre con base en Python, análisis de datos y redes
+            neuronales con PyTorch, y con experiencia armando APIs con FastAPI. Actualmente
+            desarrollo Pyrovi, un mapa de riesgo de incendios en Ecuador, como proyecto personal
+            para aplicar : datos, modelo, API y página web.
+          </p>
+        </section>
+
+        <section>
+          <h2>Formación académica</h2>
+          <div class="tarjeta">
+            <h3>Ingeniería en Sistemas Inteligentes (ISI)</h3>
+            <p><strong>Universidad Bolivariana del Ecuador</strong> · Cursando segundo semestre</p>
+            <p>
+              Materias: programación orientada a objetos en Java, análisis de datos,
+              herramientas de inteligencia artificial, diseño con UML, matemáticas aplicadas
+              y sistemas gestores de bases de datos.
+            </p>
+          </div>
+          <div class="tarjeta" style="margin-top:12px;">
+            <h3>Autoformación en Python e inteligencia artificial</h3>
+            <p>
+              Ruta propia de Python a IA: Python, Pandas, NumPy, scikit-learn y PyTorch,
+              con prácticas guiadas e independientes.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Experiencia laboral y proyectos</h2>
+
+          <div class="tarjeta">
+            <h3>Pyrovi, mapa de riesgo de incendios en Ecuador</h3>
+            <p><strong>Proyecto personal</strong> · 2026</p>
+            <ul>
+              <li>Unión y limpieza de 24588 puntos de calor de NASA FIRMS (2021 a 2026) con Pandas, quedando 23247 tras filtrar los de baja confianza.</li>
+              <li>Cruce con el clima diario de Open-Meteo (temperatura y precipitación) para dos zonas piloto: Distrito Metropolitano de Quito y Junín, Manabí.</li>
+              <li>Red neuronal en PyTorch sobre 602 registros zona por semana, con recall de 0.71 y precisión de 0.62 usando un umbral de 0.4.</li>
+              <li>API con FastAPI (<code>GET /riesgo/{zona}</code>) y página con mapa Leaflet, tarjetas por zona y semáforo de riesgo alto, medio y bajo.</li>
+            </ul>
+          </div>
+
+          <div class="tarjeta" style="margin-top:12px;">
+            <h3>Registro de usuarios con Java y MySQL</h3>
+            <p><strong>Proyecto académico</strong> · NetBeans con Maven</p>
+            <p>Aplicación de escritorio organizada en paquetes de modelo, DAO, conexión y vista.</p>
+          </div>
+
+          <div class="tarjeta" style="margin-top:12px;">
+            <h3>Proyecto integrador de bases de datos</h3>
+            <p><strong>Proyecto académico</strong> · Sistemas gestores de bases de datos</p>
+            <p>Modelo relacional en MySQL con consultas SELECT, JOIN y agregaciones, y base no relacional en MongoDB.</p>
+          </div>
+
+          <div class="tarjeta" style="margin-top:12px;">
+            <h3>Diagramas de clases UML</h3>
+            <p><strong>Proyecto académico</strong> · Violet UML Editor</p>
+            <p>Diseño de sistemas de biblioteca y de gestión de tareas.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Currículum creado con HTML y CSS. Clase práctica 1.
+  </footer>
+
+</body>
+</html>
